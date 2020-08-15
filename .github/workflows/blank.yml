@@ -1,17 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: "CI ${GITHUB_REF##*/}"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 
 on:
   push:
-    branches:    
-      - '*'         # matches every branch that doesn't contain a '/'
-      - '*/*'       # matches every branch containing a single '/'
-      - '**'        # matches every branch
-      - '!master'   # excludes master
+    branches: [ master ]
   pull_request:
     branches:    
       - '*'         # matches every branch that doesn't contain a '/'
