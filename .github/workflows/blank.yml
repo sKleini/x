@@ -39,7 +39,7 @@ jobs:
         echo GITHUB_REF: ${GITHUB_REF##*/}
         BRANCH="/${GITHUB_REF##*/}"
         echo $BRANCH
-        if [$BRANCH = "/master"]
+        if [$BRANCH -eq "/master"]
         then 
            BRANCH=""
         fi
