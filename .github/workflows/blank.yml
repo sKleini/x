@@ -22,4 +22,6 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo "Los geht's"
+        touch test1.txt
+        curl --user '${{ secrets.DAVUSER }}:${{ secrets.DAVPW }}' -T './test1.txt' '${{ secrets.DAVURL }}/Zeitung/test1.txt'
         
