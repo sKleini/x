@@ -13,7 +13,7 @@ def berechne_potenz(basis, exponent):
 
 # Benutzer nach Basis und Exponent fragen
 basis = float(input("Gib die Basis ein: "))
-exponent = '2'
+exponent = 2
 
 # Potenz berechnen und ausgeben
 ergebnis = berechne_potenz(basis, exponent)
