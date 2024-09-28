@@ -1,21 +1,18 @@
-def berechne_potenz(basis, exponent):
-  """Berechnet die Potenz einer Zahl.
+def potenziere_mit_zwei(zahl):
+  """Potenziert eine Zahl mit 2.
 
   Args:
-    basis: Die Basis der Potenz.
-    exponent: Der Exponent der Potenz.
+    zahl: Die Zahl, die potenziert werden soll.
 
   Returns:
-    Die berechnete Potenz.
+    Das Ergebnis der Potenzierung.
   """
 
-  return basis ** exponent
+  return zahl ** 2
 
-# Benutzer nach Basis und Exponent fragen
-basis = float(input("Gib die Basis ein: "))
-exponent = 2
+# Benutzer nach einer Zahl fragen
+eingabe = float(input("Gib eine Zahl ein: "))
 
-# Potenz berechnen und ausgeben
-ergebnis = berechne_potenz(basis, exponent)
-print(basis, "hoch", exponent, "ist", ergebnis)
-
+# Zahl mit 2 potenzieren und Ergebnis ausgeben
+ergebnis = potenziere_mit_zwei(eingabe)
+print("Das Quadrat von", eingabe, "ist", ergebnis)
